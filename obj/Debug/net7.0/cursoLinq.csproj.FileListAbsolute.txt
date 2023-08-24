@@ -1,0 +1,15 @@
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/bin/Debug/net7.0/cursoLinq
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/bin/Debug/net7.0/cursoLinq.deps.json
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/bin/Debug/net7.0/cursoLinq.runtimeconfig.json
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/bin/Debug/net7.0/cursoLinq.dll
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/bin/Debug/net7.0/cursoLinq.pdb
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.csproj.AssemblyReference.cache
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.AssemblyInfoInputs.cache
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.AssemblyInfo.cs
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.csproj.CoreCompileInputs.cache
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.dll
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/refint/cursoLinq.dll
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.pdb
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/cursoLinq.genruntimeconfig.cache
+/Users/pablo/Documents/Programación/Cursos Platzi/Manejo de datos c# con Linq/cursoLinq/obj/Debug/net7.0/ref/cursoLinq.dll

@@ -1,0 +1,7 @@
+class LinqQueries
+{
+    public LinqQueries()
+    {
+            
+    }
+}
