@@ -29,6 +29,8 @@ Console.WriteLine($"Todos los libros tienen un status? - {query.AllBooksHaveStat
 //Algun libro fue publicado en 2005
 Console.WriteLine($"Algún libro fue publicado en 2005 ? - {query.SomeBookIsFromTwoThousandFive()}");
 
+//Libros de python
+PrintValuesFilter(query.PythonBooks());
 
 
 void PrintValuesFilter(IEnumerable<Book> booksListFilter)
