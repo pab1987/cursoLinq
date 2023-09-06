@@ -20,13 +20,13 @@ class LinqQueries
         return librosCollection;
     }
 
-    public IEnumerable<Book> TwoThousandBooks()
+    public IEnumerable<Book> TwoThousandBooks(int PageNumber, String Categories)
     {
         //Esta es la manera con extension method
         //return librosCollection.Where(p => p.PublishedDate.Year > 2000);
 
         //Manera con query expresion
-        return from l in librosCollection where l.PageCount > 250 && l.Title.Contains("in Action") select l;
+        return from l in librosCollection where l.PageCount > PageNumber && l.Title.Contains(Categories) select l;
     }
 
     public bool AllBooksHaveStatus()
@@ -34,14 +34,25 @@ class LinqQueries
         return librosCollection.All(p => p.Status != string.Empty);
     }
 
-    public bool SomeBookIsFromTwoThousandFive()
+    public bool SomeBookIsFromTwoThousandFive(int Year)
     {
-        return librosCollection.Any(p => p.PublishedDate.Year == 2005);
+        return librosCollection.Any(p => p.PublishedDate.Year == Year);
     }
 
-    public IEnumerable<Book> PythonBooks()
+    public IEnumerable<Book> PythonBooks(String Categories)
     {
 
-        return librosCollection.Where(p => p.Categories.Contains("Python"));
+        return librosCollection.Where(p => p.Categories.Contains(Categories));
+    }
+
+    public IEnumerable<Book> JavaBooksAsc(String Categorie)
+    {
+        return librosCollection.Where(p => p.Categories.Contains(Categorie)).OrderBy(p => p.Title);
+    }
+
+
+    public IEnumerable<Book> BooksWihtMorePages(int NumberPages)
+    {
+        return librosCollection.Where(p => p.PageCount > NumberPages).OrderByDescending(p => p.PageCount); 
     }
 }
