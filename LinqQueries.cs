@@ -9,7 +9,7 @@ class LinqQueries
         {
             string json = reader.ReadToEnd();
             this.librosCollection = System.Text.Json.JsonSerializer.Deserialize<List<Book>>(
-                json, new System.Text.Json.JsonSerializerOptions() 
+                json, new System.Text.Json.JsonSerializerOptions()
                 { PropertyNameCaseInsensitive = true })
                 ?? Enumerable.Empty<Book>().ToList();
         }
@@ -53,6 +53,23 @@ class LinqQueries
 
     public IEnumerable<Book> BooksWihtMorePages(int NumberPages)
     {
-        return librosCollection.Where(p => p.PageCount > NumberPages).OrderByDescending(p => p.PageCount); 
+        return librosCollection.Where(p => p.PageCount > NumberPages).OrderByDescending(p => p.PageCount);
+    }
+
+    public IEnumerable<Book> TopThreeBooks(String Categorie, int cantidad)
+    {
+        return librosCollection
+        .Where(p => p.Categories
+        .Contains(Categorie))
+        .OrderByDescending(p => p.PublishedDate)
+        .Take(cantidad);
+    }
+
+    public IEnumerable<Book> ThirdFourthBook(int cantidad)
+    {
+        return librosCollection
+        .Where(p => p.PageCount > cantidad)
+        .Take(4)
+        .Skip(2);
     }
 }

@@ -36,7 +36,14 @@ LinqQueries query  = new LinqQueries();
 //PrintValuesFilter(query.JavaBooksAsc("Java"));
 
 //Libros con mas de 450 paginas ordenador de forma decendente
-PrintValuesFilter(query.BooksWihtMorePages(450));
+//PrintValuesFilter(query.BooksWihtMorePages(450));
+
+//Reto operador Take
+//PrintValuesFilter(query.TopThreeBooks("Java", 3));
+
+
+//Tercer y cuarto libro usando operador Skip
+PrintValuesFilter(query.ThirdFourthBook(400));
 
 
 void PrintValuesFilter(IEnumerable<Book> booksListFilter)
