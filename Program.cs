@@ -84,8 +84,11 @@ LinqQueries query = new LinqQueries();
 //ImprimirGrupo(query.LibrosDespuesDel2000AgrupadosPorAnio());
 
 //Diccionario de libros agrupados por primera letra del titulo
-var diccionarioLookup = query.DiccionarioLibrosPorLetra();
-ImprimirDiccionario(diccionarioLookup, 'S');
+//var diccionarioLookup = query.DiccionarioLibrosPorLetra();
+//ImprimirDiccionario(diccionarioLookup, 'S');
+
+//Libros con Join de different collectios
+PrintValuesFilter(query.LibrosDespuesdel2005ConMasde500Paginas());
 
 
 
